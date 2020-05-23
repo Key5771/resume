@@ -16,6 +16,7 @@
 ```swift
 - 사용언어 : Swift
 - 개발환경 : Xcode 11, Firebase
+- 라이브러리 : FSCalendar
 - 주요내용
 	1. 자신만의 일기를 작성
 	2. 공개/비공개 기능을 통해 다른 사람과 자신의 일기를 공유
@@ -30,8 +31,9 @@
 ------
 
 ```swift
-- 사용언어 및 기술 : Swift, Python, Alamofire
+- 사용언어 및 기술 : Swift, Python
 - 개발환경 : Xcode 11, Django
+- 라이브러리 : Alamofire, SDWebImage
 - 주요내용
 	1. 제주도 내 모든 대학, 단과대학, 학과의 게시판을 제공
 	2. 자신이 소속된 대학, 단과대학, 학과의 경우 회원가입 시 설정하여 기본적으로 구독
@@ -47,8 +49,8 @@
 ------
 
 ```swift
-- 사용언어 및 기술 : Swift, Kingfisher, CoreData
-- 개발환경 : Xcode 11
+- 사용언어 및 기술 : Swift
+- 개발환경 : Xcode 11, CoreData
 - 주요내용
 	1. 아이폰 내부의 메모앱과 같은 기능
 	2. 사진 첨부가 가능하며 그 사진을 CollectionView를 통해 Display
@@ -64,14 +66,33 @@
 -------
 
 ```swift
-- 사용언어 : Swift, Kingfisher
+- 사용언어 : Swift
 - 개발환경 : Xcode 11
+- 라이브러리 : Kingfisher
 - 주요내용
 	1. "https://news.google.com/news/rss" 에서 제공하는 데이터를 파싱하여 Display
 	2. 기본적으로 XML형식의 데이터에서 title 및 link를 파싱
 	3. 파싱한 데이터 중 link에 해당하는 데이터(html)에서 image 및 description을 정규표현식을 사용하여 추출
 	4. image의 경우 Kingfisher 라이브러리를 활용하여 이미지 로딩
 	5. description에서 제일 많이 사용되는 단어를 추출하는 알고리즘을 통해 키워드 추출
+```
+
+
+
+#### Horror-filter
+
+------
+
+```swift
+- 사용언어 : Swift
+- 개발환경 : Xcode 11
+- 주요내용
+	1. '2020 NAVER CAMPUS HACKDAY'에 참가자로 선정되어 진행한 프로젝트 입니다.
+	2. API 서버를 통해 영상의 리스트를 받아온 후 영상의 리스트를 보여줍니다.
+	3. 영상을 한 번에 10개를 받아오는데 6번째가 로드되었을 때, 다음 페이지의 여부를 확인한 후 다음 페이지가 있다면 다음 10개
+		 를 미리 가져옵니다.
+	4. 받아온 데이터를 UICollectionView를 통해 보여주고 하나의 영상을 선택했을 때는 영상에서 필터가 적용될 구간을 받아옵		 니다.
+	5. 받아온 데이터를 커스텀 비디오 플레이어에 넘겨주고 해당 데이터 시간 동안 영상에 blur effect를 적용합니다.
 ```
 
 
@@ -107,3 +128,5 @@
 - A Course of Data Science based on Python
 
   2019.07.15 ~ 2019.07.19 마이크로소프트와 SWKOREA에서 주관하는 프로그램 이수.
+  
+- 2020 NAVER CAMPUS HACKDAY 참가자 선정 후 프로젝트 진행.
